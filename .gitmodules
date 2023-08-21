@@ -1,0 +1,6 @@
+[submodule "dd2-pegelstaende-database"]
+	path = dd2-pegelstaende-database
+	url = git@github.com:Luca-Bke/dd2-pegelstaende-database.git
+[submodule "dd2-pegelstaende-crawler"]
+	path = dd2-pegelstaende-crawler
+	url = https://github.com/Luca-Bke/dd2-pegelstaende-crawler.git
