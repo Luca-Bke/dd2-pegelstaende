@@ -4,3 +4,6 @@
 [submodule "dd2-pegelstaende-crawler"]
 	path = dd2-pegelstaende-crawler
 	url = https://github.com/Luca-Bke/dd2-pegelstaende-crawler.git
+[submodule "dd2-pegelstaende-viewer"]
+	path = dd2-pegelstaende-viewer
+	url = https://github.com/Luca-Bke/dd2-pegelstaende-viewer.git
