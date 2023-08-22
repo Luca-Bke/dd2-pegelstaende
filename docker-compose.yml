@@ -1,6 +1,6 @@
 services:
   database:
-    name: database
+    container_name: database
     image: ghcr.io/luca-bke/dd2-pegelstaende-database:main
     # ports:
     #   - "3306:3306"
@@ -24,3 +24,7 @@ services:
       - MYSQL_USER=root
       - MYSQL_PASSWORD=Pegelstand124__
       - MYSQL_DATABASE=pegelstaende
+    ports:
+      - "80:80"
+volumes:
+  sql-data:
