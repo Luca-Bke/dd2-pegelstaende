@@ -1,0 +1,18 @@
+services:
+  database:
+    name: database
+    image: ghcr.io/luca-bke/dd2-pegelstaende-database:main
+    # ports:
+    #   - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=Pegelstand124__
+    volumes:
+      - sql-data:/var/lib/mysql
+  crawler:
+    image: ghcr.io/luca-bke/dd2-pegelstaende-crawler:main
+    environment:
+      - MYSQL_HOST=database
+      - MYSQL_PORT=3306
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=Pegelstand124__
+      - MYSQL_DATABASE=test
